@@ -32,7 +32,7 @@ public class AppRunner {
         Utils utils = new Utils();
         while ((line = br.readLine()) != null) {
             int[] lineResult = utils.getInputs(line);
-            receipt = execute(lineResult);
+            receipt += execute(lineResult);
         }
         return receipt;
     }
