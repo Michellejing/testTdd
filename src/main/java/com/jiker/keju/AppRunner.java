@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class AppRunner {
     public static void main(String[] args) {
-        String testDataFile = args[0];
+        String testDataFile = "testData.txt";
         String receipt = "";
         try {
             receipt = getReceipt(testDataFile);

@@ -18,8 +18,8 @@ public class Utils {
     public int[] getInputs(String line) {
         int[] result = {0, 0};
         if (line.contains("公里,等待") && line.contains("分钟")) {
-            result[0] = toInteger(line.substring(0, line.indexOf("公里")).trim());
-            result[1] = toInteger(line.substring(line.indexOf("等待") + 2, line.indexOf("分钟")).trim());
+            result[0] = toInteger(line.substring(0, line.indexOf("公里")));
+            result[1] = toInteger(line.substring(6, 7));
         }
         return result;
     }

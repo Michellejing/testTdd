@@ -14,7 +14,7 @@ public class TaxiPriceCalculateTest {
 	@Test
 	public void test_displayPrice() {
 		TaxiController txController=new TaxiController();
-		assertEquals("�շ�13Ԫ\n", txCalculate.displayPrice(txController));
+		assertEquals("收费13元\n", txCalculate.displayPrice(txController));
 	
 	}
 }

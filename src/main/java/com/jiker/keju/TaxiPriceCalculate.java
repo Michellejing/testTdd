@@ -11,7 +11,7 @@ public class TaxiPriceCalculate {
 
     public String displayPrice(TaxiController calculator) {
         int price = (int) Math.round(calculator.calculate(getDistance(distance), time));
-        return String.format("�շ�%dԪ\n", price);
+        return String.format("收费%d元\n", price);
     }
 
     public int getDistance(int distance) {
